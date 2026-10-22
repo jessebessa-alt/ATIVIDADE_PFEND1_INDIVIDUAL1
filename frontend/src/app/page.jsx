@@ -197,12 +197,12 @@ export default function HomePage() {
 
     if (a.lumens > b.lumens) {
       vitoriasA++;
-      confrontos.push({ icone: 'bi-flashlight', categoria: 'Poder de Luz (Lumens)', valorA: `${a.lumens} lm`, valorB: `${b.lumens} lm`, vencedor: a.nome });
+      confrontos.push({ icone: ' bi-lightbulb-fill', categoria: 'Poder de Luz (Lumens)', valorA: `${a.lumens} lm`, valorB: `${b.lumens} lm`, vencedor: a.nome });
     } else if (b.lumens > a.lumens) {
       vitoriasB++;
-      confrontos.push({ icone: 'bi-flashlight', categoria: 'Poder de Luz (Lumens)', valorA: `${a.lumens} lm`, valorB: `${b.lumens} lm`, vencedor: b.nome });
+      confrontos.push({ icone: ' bi-lightbulb-fill', categoria: 'Poder de Luz (Lumens)', valorA: `${a.lumens} lm`, valorB: `${b.lumens} lm`, vencedor: b.nome });
     } else {
-      confrontos.push({ icone: 'bi-flashlight', categoria: 'Poder de Luz (Lumens)', valorA: `${a.lumens} lm`, valorB: `${b.lumens} lm`, vencedor: 'Empate' });
+      confrontos.push({ icone: ' bi-lightbulb-fill', categoria: 'Poder de Luz (Lumens)', valorA: `${a.lumens} lm`, valorB: `${b.lumens} lm`, vencedor: 'Empate' });
     }
 
     if (a.autonomia_mAh > b.autonomia_mAh) {
@@ -275,7 +275,7 @@ export default function HomePage() {
 
                 <p className="preco-destaque">R$ {Number(lanternaDestaque.preco).toFixed(2)}</p>
                 <p>
-                  <i className="bi bi-flashlight" style={{ marginRight: '6px' }}></i>
+                  <i className="bi  bi-lightbulb-fill" style={{ marginRight: '6px' }}></i>
                   <strong>Lumens:</strong> {lanternaDestaque.lumens} lm
                 </p>
                 <p>
@@ -314,7 +314,7 @@ export default function HomePage() {
                     <i className="bi bi-pencil-square" style={{ marginRight: '6px' }}></i>Modificar
                   </button>
                   <button onClick={() => deletarLanterna(lanternaDestaque.id)} className="btn-acao-deletar">
-                    <i className="bi bi-trash3-fill" style={{ marginRight: '6px' }}></i>Exterminar
+                    <i className="bi bi-trash3-fill" style={{ marginRight: '6px' }}></i>Excluir
                   </button>
                 </div>
               </>
@@ -347,7 +347,7 @@ export default function HomePage() {
               <div className="nome-card-produto">
                 <h3>{item.nome}</h3>
                 <p>
-                  <i className="bi bi-flashlight" style={{ marginRight: '4px' }}></i>{item.lumens} lm | {' '}
+                  <i className="bi  bi-lightbulb-fill" style={{ marginRight: '4px' }}></i>{item.lumens} lm | {' '}
                   <i className="bi bi-battery-charging" style={{ marginRight: '4px' }}></i>{item.autonomia_mAh} mAh
                 </p>
                 <span className="preco-card">R$ {Number(item.preco).toFixed(2)}</span>
@@ -371,8 +371,8 @@ export default function HomePage() {
             </select>
             {lutadorA && (
               <div className="resumo-lutador">
-                <img src={lutadorA.imagem} alt="" style={{ width: '100%', height: '80px', objectFit: 'cover', borderRadius: '4px', marginBottom: '8px' }} />
-                <p><i className="bi bi-flashlight" style={{ marginRight: '6px' }}></i>Lumens: <strong>{lutadorA.lumens}</strong></p>
+                <img src={lutadorA.imagem} alt="" style={{ width: '100%',height: '150px', objectFit: 'cover', objectPosition: 'center', borderRadius: '4px', marginBottom: '8px' }} />
+                <p><i className="bi  bi-lightbulb-fill" style={{ marginRight: '6px' }}></i>Lumens: <strong>{lutadorA.lumens}</strong></p>
                 <p><i className="bi bi-battery-charging" style={{ marginRight: '6px' }}></i>Bateria: <strong>{lutadorA.autonomia_mAh} mAh</strong></p>
                 <p><i className="bi bi-gear-fill" style={{ marginRight: '6px' }}></i>Extras: <strong>{lutadorA.outros_atributos?.valor_soma} pts</strong></p>
               </div>
@@ -388,8 +388,8 @@ export default function HomePage() {
             </select>
             {lutadorB && (
               <div className="resumo-lutador">
-                <img src={lutadorB.imagem} alt="" style={{ width: '100%', height: '80px', objectFit: 'cover', borderRadius: '4px', marginBottom: '8px' }} />
-                <p><i className="bi bi-flashlight" style={{ marginRight: '6px' }}></i>Lumens: <strong>{lutadorB.lumens}</strong></p>
+                <img src={lutadorB.imagem} alt="" style={{ width: '100%',height: '150px', objectFit: 'cover', objectPosition: 'center', borderRadius: '4px', marginBottom: '8px' }} />
+                <p><i className="bi  bi-lightbulb-fill" style={{ marginRight: '6px' }}></i>Lumens: <strong>{lutadorB.lumens}</strong></p>
                 <p><i className="bi bi-battery-charging" style={{ marginRight: '6px' }}></i>Bateria: <strong>{lutadorB.autonomia_mAh} mAh</strong></p>
                 <p><i className="bi bi-gear-fill" style={{ marginRight: '6px' }}></i>Extras: <strong>{lutadorB.outros_atributos?.valor_soma} pts</strong></p>
               </div>
@@ -429,7 +429,7 @@ export default function HomePage() {
             <div className="modal-descricao-titulo">
               <h1>
                 <i className="bi bi-tools" style={{ marginRight: '8px' }}></i>
-                {editandoId ? 'Modificar Equipamento' : 'Forjar Nova Lanterna'}
+                {editandoId ? 'Modificar Equipamento' : 'Inserir Nova Lanterna'}
               </h1>
               <button className="btn-fechar-modal" onClick={() => setModalAberto(false)}>
                 <i className="bi bi-x-lg"></i>

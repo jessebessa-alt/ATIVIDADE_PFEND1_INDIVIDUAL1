@@ -188,7 +188,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Lista e Cards (.card-prduto) */
 .lista-cards-produtos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -220,6 +219,8 @@ body {
   justify-content: center;
   position: relative;
   border-bottom: 1px solid #1f1f1f;
+  object-fit: cover;
+  object-position: center;
 }
 
 .icone-lanterna {
@@ -491,7 +492,6 @@ body {
   }
 }
 
-/* Telemóveis */
 @media (max-width: 600px) {
   .flashlight-container {
     height: 50vh;
@@ -577,4 +577,10 @@ body {
   .modal-botoes {
     flex-direction: column;
   }
+}
+
+.resumo-lutador {
+  display: block;
+   align-items: center;
+  justify-content: center;
 }
