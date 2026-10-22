@@ -6,51 +6,51 @@ import HalloweenSVG from '@/components/banner/HalloweenSVG';
 import '@/components/banner/halowwen.css';
 
 const LANTERNA_INICIAL= [
+
   {
-    id: 1,
-    nome: 'Farol do Expurgo Tático',
-    preco: 189.90,
-    link_original: 'https://amazon.com.br',
-    link_da_revenda: 'https://seu-site-de-revenda.com.br',
-    lumens: 1200,
-    autonomia_mAh: 4000,
-    protecao_ip: 'IP68',
-    imagem: 'https://images.unsplash.com/photo-1508873696983-2df5c92064c7?w=400',
-    outros_atributos: {
-      valor_soma: 2,
-      topicos: ['Quebra-vidros reforçado', 'Modo estrobo cegante']
-    }
-  },
-  {
-    id: 2,
-    nome: 'Chama Fantasma UV',
-    preco: 89.50,
-    link_original: 'https://amazon.com.br',
-    link_da_revenda: 'https://seu-site-de-revenda.com.br',
-    lumens: 600,
-    autonomia_mAh: 5000,
-    protecao_ip: 'IPX6',
-    imagem: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400',
-    outros_atributos: {
-      valor_soma: 1,
-      topicos: ['Luz negra acoplada para rastros']
-    }
-  },
-  {
-    id: 3,
-    nome: 'Lanterna Compacta Chaveiro',
-    preco: 34.90,
-    link_original: 'https://amazon.com.br',
-    link_da_revenda: 'https://seu-site-de-revenda.com.br',
-    lumens: 100,
-    autonomia_mAh: 300,
-    protecao_ip: 'IPX4',
-    imagem: 'https://images.unsplash.com/photo-1533575770077-052fa2e609fc?w=400',
-    outros_atributos: {
-      valor_soma: 1,
-      topicos: ['Mosquetão incluso']
+    "id": 1,
+    "nome": "Wuben E7",
+    "preco": 189.90,
+    "link_original": "https://amazon.com.br",
+    "link_da_revenda": "https://seu-site-de-revenda.com.br",
+    "lumens": 1800,
+    "autonomia_mAh": 1100,
+    "protecao_ip": "IP68",
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZpNs9BDLoWmQ1g60N7K2dMANPXsIqL0dAIgFMpha2Q&s=10",
+    "outros_atributos": {
+      "valor_soma": 4,
+      "topicos": [
+        "Base magnética para fixação",
+        "Compatível com extensor para bateria 18650",
+        "Suporte opcional para lanterna de cabeça",
+        "Carregamento rápido via USB Tipo-C"
+      ]
     }
   }
+
+,
+
+  {
+    "id": 2,
+    "nome": "Wuben G5",
+    "preco": 206.99,
+    "link_original": "https://amazon.com.br",
+    "link_da_revenda": "https://seu-site-de-revenda.com.br",
+    "lumens": 400,
+    "autonomia_mAh": 500,
+    "protecao_ip": "IP68",
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZpBrlDrj-xtjmPtYwBuqma9cakNH-C32umYEawHQzMQ&s=10",
+    "outros_atributos": {
+      "valor_soma": 4,
+      "topicos": [
+        "Cabeça rotativa articulada em 180 graus",
+        "Luz auxiliar RGB multicolorida (7 cores)",
+        "Controle de intensidade por botão rotativo (Dial)",
+        "Base magnética e clipe ajustável de bolso"
+      ]
+    }
+  }
+
 ];
 
 const FORM_VAZIO = {

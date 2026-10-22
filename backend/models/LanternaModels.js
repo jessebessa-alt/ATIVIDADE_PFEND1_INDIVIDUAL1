@@ -1,48 +1,47 @@
 
 const lanternasIniciais = [
+[
   {
     id: 1,
-    nome: 'Farol do Expurgo Tático',
+    nome: 'Wuben E7',
     preco: 189.90,
     link_original: 'https://amazon.com.br',
-    link_da_revenda: 'https://seu-site-de-revenda.com.br',
-    lumens: 1200,
-    autonomia_mAh: 4000,
+    link_da_revenda: 'https://www.olx.com.br',
+    lumens: 1800,
+    autonomia_mAh: 1100,
     protecao_ip: 'IP68',
     outros_atributos: { 
-      valor_soma: 2, 
-      topicos: ['Quebra-vidros reforçado', 'Modo estrobo cegante'] 
+      valor_soma: 4, 
+      topicos: [
+        'Base magnética para fixação', 
+        'Compatível com extensor para bateria 18650', 
+        'Suporte opcional para lanterna de cabeça', 
+        'Carregamento rápido via USB Tipo-C'
+      ] 
     }
   },
   {
     id: 2,
-    nome: 'Chama Fantasma UV',
-    preco: 89.50,
+    nome: 'Wuben G5',
+    preco: 206.99,
     link_original: 'https://amazon.com.br',
-    link_da_revenda: 'https://seu-site-de-revenda.com.br',
-    lumens: 600,
-    autonomia_mAh: 5000,
-    protecao_ip: 'IPX6',
+    link_da_revenda: 'https://www.olx.com.br',
+    lumens: 400,
+    autonomia_mAh: 500,
+    protecao_ip: 'IP68',
     outros_atributos: { 
-      valor_soma: 1, 
-      topicos: ['Luz negra acoplada'] 
-    }
-  },
-  {
-    id: 3,
-    nome: 'Lanterna Compacta Chaveiro',
-    preco: 34.90,
-    link_original: 'https://amazon.com.br',
-    link_da_revenda: 'https://seu-site-de-revenda.com.br',
-    lumens: 100,
-    autonomia_mAh: 300,
-    protecao_ip: 'IPX4',
-    outros_atributos: { 
-      valor_soma: 1, 
-      topicos: ['Mosquetão incluso'] 
+      valor_soma: 4, 
+      topicos: [
+        'Cabeça rotativa articulada em 180 graus', 
+        'Luz auxiliar RGB multicolorida (7 cores)', 
+        'Controle de intensidade por botão rotativo (Dial)', 
+        'Base magnética e clipe ajustável de bolso'
+      ] 
     }
   }
+]
 ];
+
 
 export function garantirLanternasNaSessao(sessao) {
   if (!sessao.lanternas) {

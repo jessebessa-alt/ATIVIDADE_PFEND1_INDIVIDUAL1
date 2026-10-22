@@ -102,6 +102,6 @@ export function criarLanternaController({ lanternaService }) {
     atualizar,
     remover,
     resetar,
-    duelar // Exportando a função nova
+    duelar 
   };
 }
