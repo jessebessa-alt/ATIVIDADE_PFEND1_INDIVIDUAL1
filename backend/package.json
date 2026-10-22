@@ -1,0 +1,25 @@
+{
+  "name": "api-produtos",
+  "version": "1.0.0",
+  "description": "API de Produtos em Express com armazenamento em sessão (sem banco de dados e sem CORS)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node scripts/check.js"
+  },
+  "keywords": [
+    "express",
+    "session",
+    "crud",
+    "produtos"
+  ],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-session": "^1.18.1"
+  }
+}
